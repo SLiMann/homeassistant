@@ -1,3 +1,4 @@
+#source url: https://community.home-assistant.io/t/facial-recognition-room-presence-using-double-take-frigate/290943#home-assistanthttpswwwhome-assistantio-9
 sensor:
   - platform: mqtt
     name: Scott
@@ -6,4 +7,3 @@ sensor:
     json_attributes_topic: 'double-take/matches/scottmcdermott'
     value_template: '{{ value_json.camera }}'
     availability_topic: 'double-take/available'
-    
