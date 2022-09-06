@@ -1,0 +1,9 @@
+sensor:
+  - platform: mqtt
+    name: Scott
+    icon: mdi:account
+    state_topic: 'double-take/matches/scottmcdermott'
+    json_attributes_topic: 'double-take/matches/scottmcdermott'
+    value_template: '{{ value_json.camera }}'
+    availability_topic: 'double-take/available'
+    
